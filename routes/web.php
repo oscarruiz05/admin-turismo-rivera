@@ -22,3 +22,8 @@ Route::get('/', function() {
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::middleware('auth')->group(function(){
+    Route::view('profile/{id}', 'home')->name('profile.show');
+});

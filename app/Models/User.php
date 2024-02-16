@@ -18,8 +18,10 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'nombres',
+        'apellidos',
         'email',
+        'avatar',
         'password',
     ];
 
@@ -42,4 +44,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function adminlte_profile_url(){
+        return route('profile.show', $this->id);
+    }
+
+    public function adminlte_image(){
+        return $this->avatar ? asset($this->avatar) : asset('vendor/adminlte/dist/img/AdminLTELogo.png');
+    }
+
+    public function adminlte_desc(){
+        return "{$this->nombres} {$this->apellidos}";
+    }
 }
