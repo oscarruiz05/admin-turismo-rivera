@@ -315,71 +315,141 @@ return [
             // 'label'       => 4,
             // 'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+
+        ['header' => 'PAGINA WEB'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text' => 'Prestadores',
+            'icon' => 'fas fa-fw fa-th',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Hoteles',
+                    'url'  => 'prestadores/hoteles',
+                    'icon' => 'fas fa-fw fa-hotel',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text' => 'Fincas',
+                    'url'  => 'prestadores/fincas',
+                    'icon' => 'fas fa-fw fa-campground',
                 ],
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Restaurantes',
+                    'url'  => 'prestadores/restaurantes',
+                    'icon' => 'fas fa-fw fa-utensils',
                 ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+                [
+                    'text' => 'Balnearios',
+                    'url'  => 'prestadores/balnearios',
+                    'icon' => 'fas fa-fw fa-umbrella-beach',
+                ],
+            ]
         ],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'text' => 'Deporte',
+            'url'  => 'deportes',
+            'icon' => 'fas fa-fw fa-futbol',
         ],
+        [
+            'text' => 'Turismo y Cultura',
+            'icon' => 'fas fa-fw fa-th',
+            'submenu' => [
+                [
+                    'text' => 'Termales',
+                    'url'  => 'turismo/termales',
+                    'icon' => 'fas fa-fw fa-swimmer',
+                ],
+                [
+                    'text' => 'Patrimonio Cultural',
+                    'url'  => 'turismo/patrimonio-cultural',
+                    'icon' => 'fas fa-fw fa-archway',
+                ],
+                [
+                    'text' => 'Patrimonio Natural',
+                    'url'  => 'turismo/patrimonio-natural',
+                    'icon' => 'fas fa-fw fa-tree',
+                ],
+            ]
+        ],
+        [
+            'text' => 'Economia',
+            'url'  => 'economia',
+            'icon' => 'fas fa-fw fa-hand-holding-usd',
+        ],
+        [
+            'text' => 'Noticias y Eventos',
+            'icon' => 'fas fa-fw fa-th',
+            'submenu' => [
+                [
+                    'text' => 'Noticias',
+                    'url'  => 'noticias',
+                    'icon' => 'fas fa-fw fa-newspaper',
+                ],
+                [
+                    'text' => 'Eventos',
+                    'url'  => 'noticias/eventos',
+                    'icon' => 'fas fa-fw fa-calendar-week',
+                ],
+            ]
+        ],
+
+        // [
+        //     'text' => 'change_password',
+        //     'url'  => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-lock',
+        // ],
+        // [
+        //     'text'    => 'multilevel',
+        //     'icon'    => 'fas fa-fw fa-share',
+        //     'submenu' => [
+        //         [
+        //             'text' => 'level_one',
+        //             'url'  => '#',
+        //         ],
+        //         [
+        //             'text'    => 'level_one',
+        //             'url'     => '#',
+        //             'submenu' => [
+        //                 [
+        //                     'text' => 'level_two',
+        //                     'url'  => '#',
+        //                 ],
+        //                 [
+        //                     'text'    => 'level_two',
+        //                     'url'     => '#',
+        //                     'submenu' => [
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url'  => '#',
+        //                         ],
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url'  => '#',
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //         ],
+        //         [
+        //             'text' => 'level_one',
+        //             'url'  => '#',
+        //         ],
+        //     ],
+        // ],
+        // ['header' => 'labels'],
+        // [
+        //     'text'       => 'important',
+        //     'icon_color' => 'red',
+        //     'url'        => '#',
+        // ],
+        // [
+        //     'text'       => 'warning',
+        //     'icon_color' => 'yellow',
+        //     'url'        => '#',
+        // ],
+        // [
+        //     'text'       => 'information',
+        //     'icon_color' => 'cyan',
+        //     'url'        => '#',
+        // ],
     ],
 
     /*
